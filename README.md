@@ -1,1 +1,1 @@
-# LandingPageCV.github.io
+# LandingPage.github.io
