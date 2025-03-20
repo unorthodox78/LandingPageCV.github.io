@@ -49,3 +49,34 @@ navbar.classList.remove('active');
 /*========== scroll reveal ==========*/
 
 };
+let homeContentToggleState = true;
+
+function toggleHomeContent() {
+    const homeImg = document.querySelector('.home-img img');
+
+    if (homeContentToggleState) {
+        document.querySelector('.home-content h3').innerText = 'Hello, I am';
+        document.querySelector('.home-content h1').innerText = 'Emman Badiang';
+        document.querySelector('.home-content p').innerText = '自分を信じて';
+        document.querySelector('.home-content .social-media').innerHTML = `
+            <a href="https://www.facebook.com/badiang.emmanuel/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/Syang_u10/"><i class='bx bxl-instagram'></i></a>
+            <a href="mailto:emmanuelbadiang10@gmail.com"><i class='bx bxl-gmail'></i></a>
+        `;
+        homeImg.src = 'images/home1.png';
+    } else {
+        document.querySelector('.home-content h3').innerText = 'Hello, I am';
+        document.querySelector('.home-content h1').innerText = 'Jomari R. Sunogan';
+        document.querySelector('.home-content p').innerText = '人生はつらい';
+        document.querySelector('.home-content .social-media').innerHTML = `
+            <a href="https://www.facebook.com/unorthodox78/"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/zzz_zzz6445/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://t.me/JomariSunogan"><i class='bx bxl-telegram'></i></a>
+            <a href="mailto:jomarisunogan23@gmail.com"><i class='bx bxl-gmail'></i></a>
+        `;
+        homeImg.src = 'images/home.png';
+    }
+
+    homeContentToggleState = !homeContentToggleState;
+}
+
