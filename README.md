@@ -1,1 +1,1 @@
-can now support viewing in desktop up to 4k and in mobile devices
+can now support viewing in desktop up to 2560px and in mobile devices

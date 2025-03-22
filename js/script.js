@@ -83,23 +83,26 @@ darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
 };
-
-/*========== scroll reveal ==========*/
-ScrollReveal({ 
+/*========== Scroll Reveal ==========*/
+ScrollReveal({
     reset: true,
     distance: '80px',
     duration: 2000,
-    delay: 200
 });
 
-ScrollReveal().reveal('.switch , .home-content h3, .home-content h1, .home-content p, .home-content .social-media, .home-content .btn', { 
-    origin: 'top', 
-    interval: 1
+ScrollReveal().reveal('.home-content h3, .home-content h1, .home-content p, .home-content .social-media, .home-content .btn, .home-content .switch, .heading', {
+    origin: 'top',
 });
 
-ScrollReveal().reveal('.heading', { 
-    origin: 'top' 
+
+ScrollReveal().reveal('.home-img img', {
+    origin: 'bottom'
 });
+
+ScrollReveal().reveal('.profession-box', {
+    reset: false
+});
+
 
 const darkModeToggle = document.querySelector(".dark-mode-toggle");
 const body = document.body;

@@ -20,7 +20,7 @@
     --shadow-color: #rgba(0, 0, 0, .2);
 }
 .dark-mode {
-    --bg-color: #080514;
+    --bg-color: #05030c;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
 }
@@ -718,13 +718,13 @@ resize: none
         font-size: 110%;
     }
     .home .profession-container {
-        width: 50%;
-        height: 67.3rem;
+        width: 55%;
+        height: 68.3rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 12rem;
-        right: 11.4rem;
+        top: 15rem;
+        right: 11.8rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -754,9 +754,9 @@ resize: none
         right: 0;
         width: 0;
         height: 0;
-        border-top: 620px solid var(--main-color);
+        border-top: 650px solid var(--main-color);
         border-right: 650px solid var(--main-color);
-        border-bottom: 570px solid var(--main-color);
+        border-bottom: 583px solid var(--main-color);
         border-left: 590px solid transparent;
     }
     .home-img img[src*="home1.png"] {
@@ -774,7 +774,7 @@ resize: none
 
     .home .profession-container {
         width: 60%;
-        height: 68.6rem;
+        height: 69.6rem;
     }
 
     .home .profession-container .profession-box {
@@ -828,21 +828,31 @@ resize: none
     }
 
     .home .profession-container {
+        margin-top: -0.2rem;
         width: 60%;
         height: 68rem;
     }
 
     .home .profession-container .profession-box {
-        right: -12rem;
+        right: -14rem;
         height: 85.2rem;
     }
 
     .home .profession-container .overlay {
+        top: -5rem;
         right: -9rem;
     }
+
+    .home-img img {
+        bottom: .3rem;
+        right: 3rem;
+        width:28%;
+        pointer-events: none;
+    }
+
     .home-img img[src*="home1.png"] {
         top: -5rem;
-        right: -2rem;
+        right: 2rem;
         width:30%;
         pointer-events: none;
     }
@@ -865,7 +875,7 @@ resize: none
     }
     .home-img img[src*="home1.png"] {
         top: 1.5rem;
-        right: -2.4rem;
+        right: 1.5rem;
         width:30%;
         pointer-events: none;
     }
@@ -1145,6 +1155,22 @@ button:hover i {
         width: 100%;
     }
 }
+@media (max-width: 375px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    button{
+        margin-bottom: 11rem;
+    }
+    .home .profession-box .porfession{
+        margin-top: 6rem;
+    }
+}
 
 @media (max-width: 365px) {
     .footer {
@@ -1156,7 +1182,7 @@ button:hover i {
         margin-top: 2rem;
     }
     button{
-        margin-bottom: 10rem;
+        margin-bottom: 11rem;
     }
     .home .profession-box .porfession{
         margin-top: 6rem;
