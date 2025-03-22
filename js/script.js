@@ -43,12 +43,8 @@ navbar.classList.remove('active');
 /*========== swiper ==========*/
 
 
-/*========== dark light mode ==========*/
-
-
-/*========== scroll reveal ==========*/
-
 };
+
 let homeContentToggleState = true;
 
 function toggleHomeContent() {
@@ -67,7 +63,7 @@ function toggleHomeContent() {
     } else {
         document.querySelector('.home-content h3').innerText = 'Hello, I am';
         document.querySelector('.home-content h1').innerText = 'Jomari R. Sunogan';
-        document.querySelector('.home-content p').innerText = '人生はつらい';
+        document.querySelector('.home-content p').innerText = '偉大な人でさえ初心者だった';
         document.querySelector('.home-content .social-media').innerHTML = `
             <a href="https://www.facebook.com/unorthodox78/"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.instagram.com/zzz_zzz6445/"><i class='bx bxl-instagram'></i></a>
@@ -80,3 +76,34 @@ function toggleHomeContent() {
     homeContentToggleState = !homeContentToggleState;
 }
 
+/*========== dark light mode ==========*/
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+};
+
+/*========== scroll reveal ==========*/
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.switch , .home-content h3, .home-content h1, .home-content p, .home-content .social-media, .home-content .btn', { 
+    origin: 'top', 
+    interval: 1
+});
+
+ScrollReveal().reveal('.heading', { 
+    origin: 'top' 
+});
+
+const darkModeToggle = document.querySelector(".dark-mode-toggle");
+const body = document.body;
+
+darkModeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+});
