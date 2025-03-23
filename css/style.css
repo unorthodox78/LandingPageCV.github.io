@@ -17,12 +17,12 @@
     --text-color: #333;
     --main-color: #754ef9;
     --white-color: #fdfdfd;
-    --shadow-color: #rgba(0, 0, 0, .2);
+    --shadow-color: #rgba(0, 0, 0, 0);
 }
 .dark-mode {
-    --bg-color: #05030c;
+    --bg-color: #1a1a1a;
     --text-color: #fdfdfd;
-    --shadow-color: rgba(0, 0, 0, .7);
+    --shadow-color: rgba(0, 0, 0, 0);
 }
 
 html {
@@ -715,11 +715,11 @@ resize: none
 /* BREAKPOINTS */
 @media (max-width: 2560px) {
     html {
-        font-size: 110%;
+        font-size: 100%;
     }
     .home .profession-container {
         width: 55%;
-        height: 68.3rem;
+        height: 76rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
@@ -759,21 +759,27 @@ resize: none
         border-bottom: 583px solid var(--main-color);
         border-left: 590px solid transparent;
     }
+    .home-img img {
+        bottom: 0;
+        right: 3rem;
+        width: 26%;
+        pointer-events: none;
+    }
     .home-img img[src*="home1.png"] {
-        top: -15rem;
+        top: -11rem;
         right: -4rem;
-        width:35%;
+        width:33%;
         pointer-events: none;
     }
 }
 
 @media (max-width: 2256px) {
     html {
-        font-size: 110%;
+        font-size: 100%;
     }
     .home .profession-container {
-        width: 60%;
-        height: 68.3rem;
+        width: 55%;
+        height: 76rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
@@ -813,14 +819,81 @@ resize: none
         border-bottom: 583px solid var(--main-color);
         border-left: 590px solid transparent;
     }
+    .home-img img {
+        bottom: 0;
+        right: 7rem;
+        width: 26%;
+        pointer-events: none;
+    }
     .home-img img[src*="home1.png"] {
-        top: -15rem;
-        right: -4rem;
+        top: -9rem;
+        right: 0;
         width:35%;
         pointer-events: none;
     }
 }
-@media (max-width: 2200px) {
+
+@media (max-width: 2254px) {
+    html {
+        font-size: 100%;
+    }
+    .home .profession-container {
+        width: 55%;
+        height: 76rem;
+    }
+    .home .profession-container .profession-box {
+        position: absolute;
+        top: 15rem;
+        right: 11.8rem;
+        width: 720px;
+        height: 720px;
+        border-radius: 50%;
+        box-shadow: 0 .2rem .5rem var(--shadow-color);
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .profession-box .profession {
+        position: absolute;
+        left: -20.6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+        transform: rotate(calc(360deg / 4 * var(--i)));
+        transform-origin: 700px;
+        background: var(--bg-color);
+        padding: 13px 0;
+    
+    }
+
+    .home .profession-container .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 650px solid var(--main-color);
+        border-right: 650px solid var(--main-color);
+        border-bottom: 583px solid var(--main-color);
+        border-left: 590px solid transparent;
+    }
+    .home-img img {
+        bottom: 0;
+        right: 7rem;
+        width: 26%;
+        pointer-events: none;
+    }
+    .home-img img[src*="home1.png"] {
+        top: -9rem;
+        right: 0;
+        width:35%;
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 2202px) {
     html {
         font-size: 100%;
     }
@@ -869,7 +942,7 @@ resize: none
     .home-img img {
         bottom: 0rem;
         right: 7rem;
-        width: 30%;
+        width: 26%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
@@ -928,7 +1001,7 @@ resize: none
     .home-img img {
         bottom: 0rem;
         right: 7rem;
-        width: 30%;
+        width: 26%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
@@ -938,6 +1011,7 @@ resize: none
         pointer-events: none;
     }
 }
+
 @media (max-width: 2140px) {
     html {
         font-size: 100%;
@@ -987,11 +1061,11 @@ resize: none
     .home-img img {
         bottom: 0rem;
         right: 7rem;
-        width: 30%;
+        width: 26%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
-        top: 0rem;
+        top: -5rem;
         right: 7.4rem;
         width: 30%;
         pointer-events: none;
@@ -1045,8 +1119,8 @@ resize: none
     }
     .home-img img {
         bottom: 0rem;
-        right: 7rem;
-        width: 30%;
+        right: 9rem;
+        width: 26%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
@@ -1104,8 +1178,8 @@ resize: none
     }
     .home-img img {
         bottom: 0rem;
-        right: 7rem;
-        width: 30%;
+        right: 9rem;
+        width: 26%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
@@ -1144,7 +1218,7 @@ resize: none
         flex-direction: column;
         color: var(--main-color);
         transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 700px;
+        transform-origin: 630px;
         background: var(--bg-color);
         padding: 13px 0;
     
@@ -1203,7 +1277,7 @@ resize: none
         flex-direction: column;
         color: var(--main-color);
         transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 700px;
+        transform-origin: 620px;
         background: var(--bg-color);
         padding: 13px 0;
     
@@ -1221,14 +1295,14 @@ resize: none
         border-left: 480px solid transparent;
     }
     .home-img img {
-        bottom: -6rem;
+        bottom: 0rem;
         right: 5rem;
         width: 25%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
         top: 0;
-        right: 0;
+        right: -2rem;
         width: 30%;
         pointer-events: none;
     }
@@ -1243,7 +1317,7 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
+        top: 18rem;
         right: -2rem;
         width: 768px;
         height: 768px;
@@ -1262,7 +1336,7 @@ resize: none
         flex-direction: column;
         color: var(--main-color);
         transform: rotate(calc(360deg / 4 * var(--i)));
-        transform-origin: 700px;
+        transform-origin: 620px;
         background: var(--bg-color);
         padding: 13px 0;
     
@@ -1280,14 +1354,14 @@ resize: none
         border-left: 480px solid transparent;
     }
     .home-img img {
-        bottom: -7.6rem;
+        bottom: 0rem;
         right: 6rem;
         width: 25%;
         pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
-        top: 0;
-        right: 3.8rem;
+        top: 4rem;
+        right: 0;
         width: 30%;
         pointer-events: none;
     }
@@ -1341,10 +1415,13 @@ resize: none
     }
     .home-img img {
         bottom: 0;
+        right: 2rem;
+        width: 25%;
+        pointer-events: none;
     }
     .home-img img[src*="home1.png"] {
-        bottom: -25rem;
-        right: 0;
+        top: -5rem;
+        right: -1rem;
         width:30%;
         pointer-events: none;
     }
@@ -1357,12 +1434,12 @@ resize: none
 
     .home .profession-container {
         width: 60%;
-        height: 69.6rem;
+        height: 83.6rem;
     }
 
     .home .profession-container .profession-box {
         position: absolute;
-        top: -4.8rem;
+        top: 6rem;
         right: 0;
         width: 768px;
         height: 768px;
@@ -1392,54 +1469,86 @@ resize: none
         right: 0;
         width: 0;
         height: 0;
-        border-top: 370px solid var(--main-color);
+        border-top: 430px solid var(--main-color);
         border-right: 400px solid var(--main-color);
-        border-bottom: 300px solid var(--main-color);
+        border-bottom: 430px solid var(--main-color);
         border-left: 320px solid transparent;
     }
+    .home-img img {
+        bottom: 0;
+        right: 5rem;
+        width: 25%;
+        pointer-events: none;
+    }
     .home-img img[src*="home1.png"] {
-        top: -15rem;
-        right: -3.3rem;
-        width:35%;
+        top: -5rem;
+        right: 3rem;
+        width:30%;
         pointer-events: none;
     }
 }
 
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 60%;
     }
 
     .home .profession-container {
-        margin-top: -0.2rem;
         width: 60%;
-        height: 68rem;
+        height: 83.6rem;
     }
 
     .home .profession-container .profession-box {
-        right: -14rem;
-        height: 85.2rem;
+        position: absolute;
+        top: 4rem;
+        right: -8rem;
+        width: 768px;
+        height: 768px;
+        border-radius: 50%;
+        box-shadow: 0 .2rem .5rem var(--shadow-color);
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    .home .profession-box .profession {
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: var(--main-color);
+        transform: rotate(calc(360deg / 4 * var(--i)));
+        transform-origin: 384px;
+        background: var(--bg-color);
+        padding: 13px 0;
+    
+    }
     .home .profession-container .overlay {
-        top: -5rem;
-        right: -9rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 430px solid var(--main-color);
+        border-right: 400px solid var(--main-color);
+        border-bottom: 430px solid var(--main-color);
+        border-left: 320px solid transparent;
     }
-
     .home-img img {
-        bottom: .3rem;
-        right: 3rem;
-        width:28%;
+        bottom: -7rem;
+        right: 10rem;
+        width: 28%;
         pointer-events: none;
     }
-
     .home-img img[src*="home1.png"] {
-        top: -5rem;
-        right: 2rem;
+        top: 0rem;
+        right: 7rem;
         width:30%;
         pointer-events: none;
     }
 }
+
 
 @media (max-width: 1024px) {
     .header {
@@ -1456,9 +1565,15 @@ resize: none
     .home .profession-container .overlay {
         right: -15rem;
     }
+    .home-img img {
+        bottom: 0;
+        right: 0;
+        width: 28%;
+        pointer-events: none;
+    }
     .home-img img[src*="home1.png"] {
-        top: 1.5rem;
-        right: 1.5rem;
+        top: 4rem;
+        right: 0;
         width:30%;
         pointer-events: none;
     }
@@ -1481,11 +1596,11 @@ resize: none
     }
 
     .home .profession-container .profession-box {
-        right: -45rem;
+        right: -33rem;
     }
 
     .home .profession-container .overlay {
-        right: -39.5rem;
+        right: -26.4rem;
     }
 
     .home-img img {
@@ -1558,7 +1673,7 @@ resize: none
     }
 
 .home {
-    padding: 10rem;
+    padding: 6rem;
     justify-content: center;
     text-align: center;
 
