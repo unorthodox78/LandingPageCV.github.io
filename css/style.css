@@ -1536,7 +1536,7 @@ resize: none
         border-left: 320px solid transparent;
     }
     .home-img img {
-        bottom: -7rem;
+        bottom: 0;
         right: 10rem;
         width: 28%;
         pointer-events: none;
