@@ -84,24 +84,40 @@ darkModeIcon.onclick = () => {
     document.body.classList.toggle('dark-mode');
 };
 /*========== Scroll Reveal ==========*/
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-});
+function initScrollReveal() {
+    if (window.innerWidth > 768) {
+        ScrollReveal({
+            reset: true,
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+        });
 
-ScrollReveal().reveal('.home-content h3, .home-content h1, .home-content p, .home-content .social-media, .home-content .btn, .home-content .switch, .heading', {
-    origin: 'top',
-});
+        ScrollReveal().reveal('.home-content h3, .home-content .social-media, .home-content .btn, .home-content .switch, .heading', {
+            origin: 'top',
+        });
 
+        ScrollReveal().reveal('.home-img img, .portfolio-box, .testimonial-wrapper, .contact form', {
+            origin: 'bottom'
+        });
 
-ScrollReveal().reveal('.home-img img', {
-    origin: 'bottom'
-});
+        ScrollReveal().reveal('.home-content h1, .services-container', {
+            origin: 'left'
+        });
 
-ScrollReveal().reveal('.profession-box', {
-    reset: false
-});
+        ScrollReveal().reveal('.home-content h3, .skills-container, .home-content p, .about-content', {
+            origin: 'right'
+        });
+    } else {
+        if (ScrollReveal().isSupported()) {
+            ScrollReveal().destroy();
+        }
+    }
+}
+
+initScrollReveal();
+
+window.addEventListener('resize', initScrollReveal);
 
 
 const darkModeToggle = document.querySelector(".dark-mode-toggle");

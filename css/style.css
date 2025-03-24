@@ -297,16 +297,16 @@ span {
 }
 
 @keyframes rotateCircle {
-    0%, 12.5% {
+    0%,20% {
         transform: rotate(0deg);
     }
-    25%, 37.5% {
+    25%,45% {
         transform: rotate(-90deg);
     }
-    50%, 62.5% {
+    50%,70% {
         transform: rotate(-180deg);
     }
-    75%, 87.5% {
+    75%,95% {
         transform: rotate(-270deg);
     }
     100% {
@@ -315,7 +315,7 @@ span {
 }
 
 .profession-box {
-    animation: rotateCircle 16s linear infinite;
+    animation: rotateCircle 13s linear infinite;
 }
 
 .about {
@@ -723,8 +723,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 18rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -778,13 +778,13 @@ resize: none
         font-size: 100%;
     }
     .home .profession-container {
-        width: 55%;
+        width: 60%;
         height: 76rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 18rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -838,13 +838,13 @@ resize: none
         font-size: 100%;
     }
     .home .profession-container {
-        width: 55%;
+        width: 60%;
         height: 76rem;
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 18rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -903,8 +903,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 18rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -962,8 +962,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 16rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -1022,8 +1022,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 14rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -1081,8 +1081,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 16rem;
+        right: 12rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -1140,8 +1140,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: 11.8rem;
+        top: 17rem;
+        right: 11rem;
         width: 720px;
         height: 720px;
         border-radius: 50%;
@@ -1199,7 +1199,7 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 20rem;
+        top: 18rem;
         right: 4.8rem;
         width: 720px;
         height: 720px;
@@ -1258,8 +1258,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 15rem;
-        right: -2rem;
+        top: 17rem;
+        right: 2rem;
         width: 768px;
         height: 768px;
         border-radius: 50%;
@@ -1317,8 +1317,8 @@ resize: none
     }
     .home .profession-container .profession-box {
         position: absolute;
-        top: 18rem;
-        right: -2rem;
+        top: 17rem;
+        right: 2rem;
         width: 768px;
         height: 768px;
         border-radius: 50%;
@@ -1378,8 +1378,8 @@ resize: none
 
     .home .profession-container .profession-box {
         position: absolute;
-        top: 6rem;
-        right: 0;
+        top: 5rem;
+        right: 2rem;
         width: 768px;
         height: 768px;
         border-radius: 50%;
@@ -1439,7 +1439,7 @@ resize: none
 
     .home .profession-container .profession-box {
         position: absolute;
-        top: 6rem;
+        top: 3rem;
         right: 0;
         width: 768px;
         height: 768px;
